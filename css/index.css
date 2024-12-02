@@ -34,6 +34,18 @@ body {
     width: 100%;
 }
 
+.add-product-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-product-inputs {
+    width: 500px;
+    height: 50px;
+}
+
 a {
     text-decoration: none;
 }
@@ -101,6 +113,7 @@ a {
     transition: transform 0.3s, box-shadow 0.3s ease;
     width: 330px;
     height: 400px;
+    margin-top: 30px;
 }
 
 .products-item:hover {
@@ -140,6 +153,8 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3%;
 }
 
 .product-price {
@@ -230,4 +245,217 @@ a {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+
+body.custom-style {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.hero.custom-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px;
+}
+
+/* Form Styles */
+.auth-form.custom-auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-form.custom-auth-form h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.auth-form.custom-auth-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.auth-form.custom-auth-form input:focus {
+    border-color: #007bff;
+}
+
+.auth-form.custom-auth-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form.custom-auth-form .submit-btn:hover {
+    background-color: #007bff;
+}
+
+.auth-form.custom-auth-form a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.auth-form.custom-auth-form a:hover {
+    text-decoration: underline;
+}
+
+.error-alert.custom-error-alert {
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error-alert.custom-error-alert.d-none {
+    display: none;
+}
+
+.error-alert.custom-error-alert .js-btn-ok {
+    background-color: #721c24;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+body.custom-login-style {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero.custom-login-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 350px;
+}
+
+/* Form Styles */
+.auth-form.custom-login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-form.custom-login-form h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.auth-form.custom-login-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.auth-form.custom-login-form input:focus {
+    border-color: #007bff;
+}
+
+.auth-form.custom-login-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form.custom-login-form .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.auth-form.custom-login-form a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.auth-form.custom-login-form a:hover {
+    text-decoration: underline;
+}
+
+/* Error Alert Styles */
+.error-alert.custom-login-error-alert {
+    width: 100%;
+    background-color: #ffeeba;
+    color: #856404;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.error-alert.custom-login-error-alert.d-none {
+    display: none;
+}
+
+.error-alert.custom-login-error-alert .js-btn-ok {
+    background-color: #856404;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
 }
